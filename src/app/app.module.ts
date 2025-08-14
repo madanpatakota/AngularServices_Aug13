@@ -5,17 +5,20 @@ import { AppComponent } from './app.component';
 import { CompAComponent } from './comp-a/comp-a.component';
 import { CarService } from './car.service';
 import { CompBComponent } from './comp-b/comp-b.component';
+import { CompCComponent } from './comp-c/comp-c.component';
+import { hydCarService } from './hydCar.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     CompAComponent,
-    CompBComponent
+    CompBComponent,
+    CompCComponent
   ],
   imports: [
     BrowserModule
   ],
-  providers: [CarService],
+  providers: [CarService , hydCarService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

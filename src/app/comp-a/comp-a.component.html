@@ -2,6 +2,12 @@
 
 <button (click)="getMecsList()">GetMecList</button>
 
+<button (click)="evtSendMoney()">SendMoney</button>
+
+<button (click)="getInfoOfBangolore()">GetBengoloreInformation</button>
+
 <div *ngFor="let item of mecsList">
      {{item}}
 </div>
+
+<p>{{carsListInfo}}</p>
